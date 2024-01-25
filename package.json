@@ -4,22 +4,30 @@
   "description": "",
   "homepage": "https://github.com/jinwens/my-Keeper",
   "keywords": [],
+  "type": "module",
   "main": "src/index.js",
   "dependencies": {
     "@material-ui/core": "^4.12.4",
     "@material-ui/icons": "^4.11.3",
+    "babel-preset-react": "^6.24.1",
     "react": "16.8.6",
     "react-dom": "16.8.6",
     "react-scripts": "^5.0.1"
   },
+    "presets": [
+      "react",
+      "es2015",
+      "stage-0"
+    ],
+  
   "devDependencies": {
     "gh-pages": "^6.1.1",
     "typescript": "3.3.3"
   },
   "scripts": {
+    "start": "react-scripts start",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
